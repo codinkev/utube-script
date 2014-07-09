@@ -10,7 +10,7 @@ python /home/kevin/django/datadump/fetch_vids.py --q "$search" --max-results 50 
 #parse API response to only the query_field of each video
 cat /home/kevin/django/datadump/mainholder.txt | rev | cut -d\) -f2 | cut -d\( -f1 | rev | sed "s/'//g" >/home/kevin/django/datadump/qholder.txt;
 
-pass='ANchov13$!!';
+pass='XXXXXXXXXX';
 
 iter=1
 while [ $iter -le 50 ];

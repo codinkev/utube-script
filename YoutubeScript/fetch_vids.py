@@ -1,5 +1,5 @@
 #!/usr/bin/python
-#The code sample below calls the API's search.list method
+#The code sample below calls the API's search list method
 #to retrieve search results associated with a particular keyword.
 #https://developers.google.com/youtube/v3/code_samples/python#search_by_keyword
 
@@ -14,22 +14,13 @@ from oauth2client.tools import argparser
 #   https://cloud.google.com/console
 # Please ensure that you have enabled the YouTube Data API for your project.
 #DEVELOPER_KEY = "AIzaSyAPYdtTZ-m0ZxMmVC1Gap1izSfO6jaNtIc"
-DEVELOPER_KEY = "AIzaSyC5E2wUN8L0_RvrwgXangWv9E5t0i7uli4"
-YOUTUBE_API_SERVICE_NAME = "youtube"
+DEVELOPER_KEY = "XXXXXXXXXXXXXXXXX"
+YOUTUBE_API_SERVICE_NAME = "XXXX"
 YOUTUBE_API_VERSION = "v3"
 
 def youtube_search(options):
   youtube = build(YOUTUBE_API_SERVICE_NAME, YOUTUBE_API_VERSION,
     developerKey=DEVELOPER_KEY)
-
-  """
-  #is this the correct usage?  passing arg to default...
-  total = len(sys.argv)
-  cmdargs = str(sys.argv)
-  print "total: " + str(total)
-  searchTerm = str(sys.argv[1])
-  print "term: " + searchTerm
-  """
 
   # Call the search.list method to retrieve results matching the specified
   # query term.
